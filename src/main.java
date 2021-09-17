@@ -31,5 +31,13 @@ public class main {
         System.out.println(contaJoao.numeroDaConta);
         System.out.println(contaJoao.saldo);
 
+        // Instanciando objetos Exercício 4
+
+        Exercicio4_Carro corsa2008Sedan = new Exercicio4_Carro(4, "Corsa 2008 Sedan", "chevrolet");
+        corsa2008Sedan.potencia = 1.4;
+
+        System.out.println(corsa2008Sedan.potencia);
+        System.out.println(corsa2008Sedan.marca);
+
     }
 }
