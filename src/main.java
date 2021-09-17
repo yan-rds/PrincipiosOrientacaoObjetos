@@ -20,5 +20,16 @@ public class main {
         System.out.println(maria.idade);
         System.out.println(maria.peso);
 
+        // Instanciando objetos Exercício 3
+
+        Exercicio3_ContaCorrente contaJoao = new Exercicio3_ContaCorrente("446664", "joao");
+        contaJoao.saldo = 353.99;
+        Exercicio3_ContaCorrente contaMaria = new Exercicio3_ContaCorrente("999000", "maria");
+
+        System.out.println(contaMaria.saldo);
+        System.out.println(contaMaria.nome);
+        System.out.println(contaJoao.numeroDaConta);
+        System.out.println(contaJoao.saldo);
+
     }
 }
