@@ -1,4 +1,8 @@
-public class main {
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class Main {
     public static void main(String[] args) {
 
         // Instanciando objetos Exercício 1
@@ -38,6 +42,36 @@ public class main {
 
         System.out.println(corsa2008Sedan.potencia);
         System.out.println(corsa2008Sedan.marca);
+
+        // Level up - Lista com países
+
+        Scanner leitor = new Scanner(System.in);
+
+        List<String> continentes = new ArrayList<>();
+
+        LevelUp_Pais brasil = new LevelUp_Pais("Brasil", 8516000.0, 200000000);
+        LevelUp_Pais argentina = new LevelUp_Pais("Argentina", 2780000.0, 44940000);
+        LevelUp_Pais bolivia = new LevelUp_Pais("bolivia", 1099000.0, 11510000);
+        LevelUp_Pais chile = new LevelUp_Pais("chile", 1099000.0, 11510000);
+
+        continentes.add(bolivia.nome);
+        continentes.add(brasil.nome);
+        continentes.add(argentina.nome);
+        continentes.add(chile.nome);
+
+        System.out.println("Digite 1 para ver a lista de países da América do Sul");
+        System.out.println("Digite 2 para sair");
+        int escolha = leitor.nextInt();
+
+        if (escolha == 1){
+            System.out.println(continentes.get(0) + "\n" + continentes.get(1) + "\n" + continentes.get(2) + "\n" + continentes.get(3));
+        }
+        else if (escolha ==2){
+            System.out.println("xau");
+        }
+
+
+
 
     }
 }
